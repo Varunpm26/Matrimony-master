@@ -1,0 +1,45 @@
+.marquee {
+  background-image: linear-gradient(to right, rgb(2, 55, 228), rgb(67, 180, 245), rgb(2, 55, 228));
+  color: tomato;
+  max-width: 800px;
+  height: 200px;
+  overflow: hidden;
+}
+.male {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  animation: malescrolling 30s linear infinite;
+}
+.female {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  animation: femalescrolling 30s linear infinite;
+}
+@keyframes malescrolling {
+  0% {transform: translate(50vw);}
+  100% {transform: translate(-50vw);}
+}
+@keyframes femalescrolling {
+  0% {transform: translate(90vw);}
+  100% {transform: translate(-90vw);}
+}
+.marquee-content li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  font-size: 5rem;
+  white-space: nowrap;
+}
+.marquee-content li img {
+  height: 12rem;
+  width: 12rem;
+}
+.marquee h2 {
+  position: absolute;
+}
+div {
+  border-radius: 8px;
+}
